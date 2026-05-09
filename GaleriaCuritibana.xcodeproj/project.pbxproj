@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCCCCCCCCCCCCCCCCCCCCC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB01 /* AppDelegate.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB02 /* SceneDelegate.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC03 /* ObraDeArte.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB03 /* ObraDeArte.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC04 /* ObraDeArteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB04 /* ObraDeArteData.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC05 /* ObraDeArteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB05 /* ObraDeArteCell.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC06 /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB06 /* GaleriaViewController.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC07 /* DetalheObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB07 /* DetalheObraViewController.swift */; };
+		CCCCCCCCCCCCCCCCCCCCCC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB08 /* Assets.xcassets */; };
+		CCCCCCCCCCCCCCCCCCCCCC09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBBBB09 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBBBBBBBBBBBBBBBBBBBBB0B /* GaleriaCuritibana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaleriaCuritibana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBBBBBBBBBBBBBBBBBBBB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB03 /* ObraDeArte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraDeArte.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB04 /* ObraDeArteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraDeArteData.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB05 /* ObraDeArteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraDeArteCell.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB06 /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB07 /* DetalheObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheObraViewController.swift; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB09 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBBBB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAAAAAAAAAAAAAAAAAAAAA0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAAAAAAAAAAAAAAAAAAAAA03 /* = */ = {
+			isa = PBXGroup;
+			children = (
+				AAAAAAAAAAAAAAAAAAAAAA05 /* GaleriaCuritibana */,
+				AAAAAAAAAAAAAAAAAAAAAA04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB0B /* GaleriaCuritibana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA05 /* GaleriaCuritibana */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB01 /* AppDelegate.swift */,
+				BBBBBBBBBBBBBBBBBBBBBB02 /* SceneDelegate.swift */,
+				AAAAAAAAAAAAAAAAAAAAAA06 /* Models */,
+				AAAAAAAAAAAAAAAAAAAAAA07 /* Data */,
+				AAAAAAAAAAAAAAAAAAAAAA08 /* Views */,
+				AAAAAAAAAAAAAAAAAAAAAA09 /* Controllers */,
+				BBBBBBBBBBBBBBBBBBBBBB08 /* Assets.xcassets */,
+				BBBBBBBBBBBBBBBBBBBBBB09 /* LaunchScreen.storyboard */,
+				BBBBBBBBBBBBBBBBBBBBBB0A /* Info.plist */,
+			);
+			path = GaleriaCuritibana;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB03 /* ObraDeArte.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA07 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB04 /* ObraDeArteData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB05 /* ObraDeArteCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAAAAAAAAAAAAAAAAAAAAA09 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBBBB06 /* GaleriaViewController.swift */,
+				BBBBBBBBBBBBBBBBBBBBBB07 /* DetalheObraViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAAAAAAAAAAAAAAAAAAAAA02 /* GaleriaCuritibana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAAAAAAAAAAAAAAAAAAAA0E /* Build configuration list for PBXNativeTarget "GaleriaCuritibana" */;
+			buildPhases = (
+				AAAAAAAAAAAAAAAAAAAAAA0A /* Sources */,
+				AAAAAAAAAAAAAAAAAAAAAA0B /* Resources */,
+				AAAAAAAAAAAAAAAAAAAAAA0C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaleriaCuritibana;
+			productName = GaleriaCuritibana;
+			productReference = BBBBBBBBBBBBBBBBBBBBBB0B /* GaleriaCuritibana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAAAAAAAAAAAAAAAAAAAAA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AAAAAAAAAAAAAAAAAAAAAA02 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AAAAAAAAAAAAAAAAAAAAAA0D /* Build configuration list for PBXProject "GaleriaCuritibana" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAAAAAAAAAAAAAAAAAAAAA03;
+			productRefGroup = AAAAAAAAAAAAAAAAAAAAAA04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAAAAAAAAAAAAAAAAAAAAA02 /* GaleriaCuritibana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAAAAAAAAAAAAAAAAAAAAA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCCCCCCCCCCCCCCCCCCCC08 /* Assets.xcassets in Resources */,
+				CCCCCCCCCCCCCCCCCCCCCC09 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAAAAAAAAAAAAAAAAAAAA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCCCCCCCCCCCCCCCCCCCC01 /* AppDelegate.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC02 /* SceneDelegate.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC03 /* ObraDeArte.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC04 /* ObraDeArteData.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC05 /* ObraDeArteCell.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC06 /* GaleriaViewController.swift in Sources */,
+				CCCCCCCCCCCCCCCCCCCCCC07 /* DetalheObraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAAAAAAAAAAAAAAAAAAAAA10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAAAAAAAAAAAAAAAAAAAAA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAAAAAAAAAAAAAAAAAAAAA12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GaleriaCuritibana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.galeria.curitibana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAAAAAAAAAAAAAAAAAAAAA13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GaleriaCuritibana/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.galeria.curitibana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAAAAAAAAAAAAAAAAAAAAA0D /* Build configuration list for PBXProject "GaleriaCuritibana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAAAAAAAAAAAAAAAAAAA10 /* Debug */,
+				AAAAAAAAAAAAAAAAAAAAAA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAAAAAAAAAAAAAAAAAAAA0E /* Build configuration list for PBXNativeTarget "GaleriaCuritibana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAAAAAAAAAAAAAAAAAAA12 /* Debug */,
+				AAAAAAAAAAAAAAAAAAAAAA13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAAAAAAAAAAAAAAAAAAAAA01 /* Project object */;
+}
