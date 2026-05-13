@@ -122,7 +122,7 @@ final class ObraDeArteCell: UICollectionViewCell {
             // Sem imagem: exibe cor de placeholder + ícone SF Symbol
             imagemView.image = nil
             placeholderView.isHidden = false
-            placeholderView.backgroundColor = placeholderColor(for: obra.imagemNome)
+            placeholderView.backgroundColor = .placeholderObra(imagemNome: obra.imagemNome)
             insertPlaceholderIcon(into: placeholderView, pointSize: 28)
         }
     }
@@ -138,8 +138,28 @@ final class ObraDeArteCell: UICollectionViewCell {
 
     // MARK: - Helpers
 
-    /// Cor distinta para cada obra, baseada no índice do nome (obra_1 → índice 0, etc.)
-    private func placeholderColor(for imagemNome: String) -> UIColor {
+    /// Insere um ícone de moldura de arte centralizado no container
+    private func insertPlaceholderIcon(into container: UIView, pointSize: CGFloat) {
+        container.subviews.forEach { $0.removeFromSuperview() }
+        let config = UIImage.SymbolConfiguration(pointSize: pointSize, weight: .ultraLight)
+        let iconView = UIImageView(image: UIImage(systemName: "photo.artframe", withConfiguration: config))
+        iconView.tintColor = UIColor.white.withAlphaComponent(0.6)
+        iconView.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(iconView)
+        NSLayoutConstraint.activate([
+            iconView.centerXAnchor.constraint(equalTo: container.centerXAnchor),
+            iconView.centerYAnchor.constraint(equalTo: container.centerYAnchor)
+        ])
+    }
+}
+
+// MARK: - Paleta de placeholder
+
+/// Cores usadas como fundo quando uma obra não possui imagem disponível.
+/// Cada obra recebe uma cor distinta com base no número presente em `imagemNome`
+/// (ex.: "obra_1" → índice 0, "obra_2" → índice 1, ...).
+extension UIColor {
+    static func placeholderObra(imagemNome: String) -> UIColor {
         let palette: [UIColor] = [
             UIColor(red: 0.55, green: 0.36, blue: 0.26, alpha: 1), // marrom terra
             UIColor(red: 0.20, green: 0.40, blue: 0.60, alpha: 1), // azul profundo
@@ -153,19 +173,5 @@ final class ObraDeArteCell: UICollectionViewCell {
         let numero = imagemNome.filter { $0.isNumber }
         let index = (Int(numero) ?? 1) - 1
         return palette[index % palette.count]
-    }
-
-    /// Insere um ícone de moldura de arte centralizado no container
-    private func insertPlaceholderIcon(into container: UIView, pointSize: CGFloat) {
-        container.subviews.forEach { $0.removeFromSuperview() }
-        let config = UIImage.SymbolConfiguration(pointSize: pointSize, weight: .ultraLight)
-        let iconView = UIImageView(image: UIImage(systemName: "photo.artframe", withConfiguration: config))
-        iconView.tintColor = UIColor.white.withAlphaComponent(0.6)
-        iconView.translatesAutoresizingMaskIntoConstraints = false
-        container.addSubview(iconView)
-        NSLayoutConstraint.activate([
-            iconView.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-            iconView.centerYAnchor.constraint(equalTo: container.centerYAnchor)
-        ])
     }
 }

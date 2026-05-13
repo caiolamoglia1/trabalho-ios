@@ -232,7 +232,7 @@ final class DetalheObraViewController: UIViewController {
             // Sem imagem real: usa placeholder colorido com ícone centralizado
             imagemView.isHidden  = true
             imagemPlaceholder.isHidden = false
-            imagemPlaceholder.backgroundColor = placeholderColor(for: obra.imagemNome)
+            imagemPlaceholder.backgroundColor = .placeholderObra(imagemNome: obra.imagemNome)
 
             let config  = UIImage.SymbolConfiguration(pointSize: 64, weight: .ultraLight)
             let iconView = UIImageView(image: UIImage(systemName: "photo.artframe", withConfiguration: config))
@@ -285,23 +285,6 @@ final class DetalheObraViewController: UIViewController {
         ])
 
         return container
-    }
-
-    /// Paleta de cores placeholder idêntica à usada na ObraDeArteCell
-    private func placeholderColor(for imagemNome: String) -> UIColor {
-        let palette: [UIColor] = [
-            UIColor(red: 0.55, green: 0.36, blue: 0.26, alpha: 1),
-            UIColor(red: 0.20, green: 0.40, blue: 0.60, alpha: 1),
-            UIColor(red: 0.60, green: 0.20, blue: 0.20, alpha: 1),
-            UIColor(red: 0.25, green: 0.50, blue: 0.35, alpha: 1),
-            UIColor(red: 0.55, green: 0.45, blue: 0.20, alpha: 1),
-            UIColor(red: 0.35, green: 0.25, blue: 0.55, alpha: 1),
-            UIColor(red: 0.20, green: 0.45, blue: 0.50, alpha: 1),
-            UIColor(red: 0.50, green: 0.30, blue: 0.45, alpha: 1),
-        ]
-        let numero = imagemNome.filter { $0.isNumber }
-        let index  = (Int(numero) ?? 1) - 1
-        return palette[index % palette.count]
     }
 
     // MARK: - Ação: Compartilhar
